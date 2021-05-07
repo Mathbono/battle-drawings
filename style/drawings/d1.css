@@ -1,0 +1,8 @@
+#d1 {
+	background-color: #5d3a3a;
+}
+#d1 #rect {
+	width: 50%;
+	height: calc(2 / 3 * 100%);
+	background-color: #b5e0ba;
+}

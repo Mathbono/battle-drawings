@@ -1,5 +1,9 @@
 @charset "UTF-8";
+
 @import 'sanitize.css';
+@import 'drawings/d1.css';
+@import 'drawings/d2.css';
+@import 'drawings/d3.css';
 
 /* Smartphone en portrait */
 @media all and (min-width: 0px) {
@@ -40,56 +44,4 @@
 body {
 	height: 100vh;
 	background-color: #171d23;
-}
-#d1 {
-	background-color: #5d3a3a;
-}
-#d1 #rect {
-	width: 50%;
-	height: calc(2 / 3 * 100%);
-	background-color: #b5e0ba;
-}
-#d2 {
-	background-color: #62374e;
-	position: relative;
-}
-#d2 * {
-	background-color: #fdc57b;
-	width: calc(1 / 8 * 100%);
-	height: calc(1 / 6 * 100%);
-	position: absolute;
-}
-#d2 #rect1 {
-	top: calc(1 / 6 * 100%);
-	left: calc(1 / 8 * 100%);
-}
-#d2 #rect2 {
-	top: calc(1 / 6 * 100%);
-	right: calc(1 / 8 * 100%);
-}
-#d2 #rect3 {
-	bottom: calc(1 / 6 * 100%);
-	left: calc(1 / 8 * 100%);
-}
-#d2 #rect4 {
-	bottom: calc(1 / 6 * 100%);
-	right: calc(1 / 8 * 100%);
-}
-#d3 {
-	background-color: #6592cf;
-	position: relative;
-}
-#d3 * {
-	position: absolute;
-}
-#d3 #rect {
-	background-color: #243d83;
-	height: 180px;
-	width: 80%;
-}
-#d3 #circle1 {
-	background-color: #6592cf;
-	width: 100px;
-	height: 100px;
-	border-radius: 50px;
 }

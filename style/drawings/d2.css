@@ -1,0 +1,26 @@
+#d2 {
+	background-color: #62374e;
+	position: relative;
+}
+#d2 * {
+	background-color: #fdc57b;
+	width: calc(1 / 8 * 100%);
+	height: calc(1 / 6 * 100%);
+	position: absolute;
+}
+#d2 #rect1 {
+	top: calc(1 / 6 * 100%);
+	left: calc(1 / 8 * 100%);
+}
+#d2 #rect2 {
+	top: calc(1 / 6 * 100%);
+	right: calc(1 / 8 * 100%);
+}
+#d2 #rect3 {
+	bottom: calc(1 / 6 * 100%);
+	left: calc(1 / 8 * 100%);
+}
+#d2 #rect4 {
+	bottom: calc(1 / 6 * 100%);
+	right: calc(1 / 8 * 100%);
+}

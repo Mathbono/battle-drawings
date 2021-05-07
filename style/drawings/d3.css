@@ -1,0 +1,18 @@
+#d3 {
+	background-color: #6592cf;
+	position: relative;
+}
+#d3 * {
+	position: absolute;
+}
+#d3 #rect {
+	background-color: #243d83;
+	height: 180px;
+	width: 80%;
+}
+#d3 #circle1 {
+	background-color: #6592cf;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+}
