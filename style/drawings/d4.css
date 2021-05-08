@@ -1,0 +1,23 @@
+#d4 {
+	background-color: #62306d;
+	padding: 0 4%;
+}
+#d4 > * {
+	display: inline-block;
+	width: calc(1 / 3 * 100%);
+	height: 100%;
+	position: relative;
+}
+#d4 > * > * {
+	background-color: #f7ec7d;
+	width: 100%;
+	height: calc(1 / 3 * 100%);
+	border-radius: calc(1 / 2 * 100%) calc(1 / 2 * 100%) 0 0;
+	position: absolute;
+	bottom: 50%;
+}
+#d4 #semi-circle1,
+#d4 #semi-circle3 {
+	rotate: 0.5turn;
+	top: 50%;
+}

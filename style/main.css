@@ -4,18 +4,19 @@
 @import 'drawings/d1.css';
 @import 'drawings/d2.css';
 @import 'drawings/d3.css';
+@import 'drawings/d4.css';
 
 /* Smartphone en portrait */
 @media all and (min-width: 0px) {
 	#drawings {
 		display: flex;
-		flex-flow: row wrap;
+		flex-flow: column nowrap;
 		justify-content: flex-start;
-		align-items: flex-start;
+		align-items: center;
 	}
 	.drawing {
-		width: 200px;
-		height: 150px;
+		width: calc(1 / 3 * 400px);
+		height: calc(1 / 3 * 300px);
 		margin: 5px 0;
 	}
 }
@@ -29,19 +30,25 @@
 		align-content: flex-start;
 	}
 	.drawing {
-		width: 400px;
-		height: 300px;
+		width: calc(2 / 3 * 400px);
+		height: calc(2 / 3 * 300px);
 		margin: 10px 0;
 	}
 }
 /* Tablette en paysage, ordinateur de taille petite et moyenne */
 @media all and (min-width: 960px) {
+	.drawing {
+		width: 400px;
+		height: 300px;
+		margin: 20px 0;
+	}
 }
 /* Ordinateur de grande taille */
 @media all and (min-width: 1280px) {
 }
 
 body {
-	height: 100vh;
 	background-color: #171d23;
+	height: 100vh;
+	font-size: 0;
 }
