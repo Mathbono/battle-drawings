@@ -5,11 +5,29 @@
 @import 'drawings/d2.css';
 @import 'drawings/d3.css';
 @import 'drawings/d4.css';
+@import 'drawings/d5.css';
+
+#number {
+	position: absolute;
+	z-index: 1;
+	background-color: black;
+	color: white;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 10px;
+}
+#drawings {
+	display: flex;
+	background-color: #171d23;
+	min-height: 100vh;
+	font-size: 0;
+}
 
 /* Smartphone en portrait */
 @media all and (min-width: 0px) {
 	#drawings {
-		display: flex;
 		flex-flow: column nowrap;
 		justify-content: flex-start;
 		align-items: center;
@@ -23,7 +41,6 @@
 /* Smartphone en paysage, tablette en portrait, petite tablette en paysage */
 @media all and (min-width: 480px) {
 	#drawings {
-		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-around;
 		align-items: flex-start;
@@ -42,13 +59,4 @@
 		height: 300px;
 		margin: 20px 0;
 	}
-}
-/* Ordinateur de grande taille */
-@media all and (min-width: 1280px) {
-}
-
-body {
-	background-color: #171d23;
-	height: 100vh;
-	font-size: 0;
 }
